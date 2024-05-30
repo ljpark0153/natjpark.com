@@ -31,15 +31,15 @@ function HomePage() {
             </p>
 
             <p>
-              While I&apos;m not programming, I spend my time fencing and
-              playing the guitar!
+              While I&apos;m not programming, I spend my time fencing or playing
+              the guitar!
             </p>
           </div>
         </div>
 
         <div
           id="skills-display"
-          className="grid grid-cols-3 gap-7 text-center mx-w-6xl"
+          className="grid grid-cols-3 gap-7 text-center mx-w-6xl pl-5"
         >
           <div>JavaScript</div>
           <div>Java</div>
@@ -48,7 +48,7 @@ function HomePage() {
           <div>HTML</div>
           <div>CSS</div>
           <div>TailwindCSS</div>
-          <div>React</div>
+          <div>ReactJS</div>
           <div>Android Studio</div>
           <div>Unity</div>
           <div>NodeJS</div>
