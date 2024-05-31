@@ -15,14 +15,14 @@ function ProjectsPage() {
                 className="w-full h-full object-scale-down"
               ></img>
             </div>
-            <div className="flex-col">
-              <p>
+            <div className="flex flex-col flex-1 justify-between py-10">
+              <div className="">
                 Ascension is a rhythm game created with Unity game engine and
                 utulizes C# for the scripts. I worked with the animation side of
                 the game and learned how to manipulate animation sprites through
                 scripts.
-              </p>
-              <div className="flex justify-center gap-8">
+              </div>
+              <div className="flex justify-center gap-8 items-end">
                 <a href="https://github.com/Gaibryol/LD55">
                   <button className="min-w-28 flex-1 border-solid border-2 border-black rounded-full px-7 py-1 hover:bg-black hover:text-white">
                     Github
@@ -43,13 +43,20 @@ function ProjectsPage() {
                 className="w-full h-full object-scale-down"
               ></img>
             </div>
-            <div className="pl-14">
+            <div className="flex flex-col flex-1 justify-between py-10">
               <p>
                 Spearmint is a mobile app created using Android Studio. It
                 allows the users to publish their experiments and others can
                 subscribe to the experiment and participate in different
                 experiments. The app uses Java and Firebase for the Backend.
               </p>
+              <div className="flex justify-center gap-8 items-end">
+                <a href="https://github.com/CMPUT301W21T22/Spearmint">
+                  <button className="min-w-28 flex-1 border-solid border-2 border-black rounded-full px-7 py-1 hover:bg-black hover:text-white">
+                    Github
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -64,11 +71,24 @@ function ProjectsPage() {
               ></img>
             </div>
 
-            <div className="">
+            <div className="flex flex-col flex-1 justify-between py-10">
               <p>
-                Spritz & Giggles is a puzzle game created with Unity game
-                engine. Worked with the UI side of the game.
+                Spritz & Giggles is a puzzle game created with Unity game engine
+                Utulizing C# for the scripts. Worked with the UI side of the
+                game.
               </p>
+              <div className="flex justify-center gap-8 items-end">
+                <a href="https://github.com/Gaibryol/GGJ2024">
+                  <button className="min-w-28 flex-1 border-solid border-2 border-black rounded-full px-7 py-1 hover:bg-black hover:text-white">
+                    Github
+                  </button>
+                </a>
+                <a href="https://zihang.itch.io/spritz-giggles">
+                  <button className="min-w-28 flex-1 border-solid border-2 border-black rounded-full px-7 py-1 hover:bg-black hover:text-white">
+                    Play!
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -82,11 +102,18 @@ function ProjectsPage() {
                 className="h-full w-full object-scale-down"
               ></img>
             </div>
-            <div className="">
+            <div className="flex flex-col justify-center">
               <p>
                 This is my personal porfolio website using ReactJS and
                 TailwindCSS.
               </p>
+              <div className="flex justify-center gap-8 items-end">
+                <a href="https://github.com/ljpark0153/jihopark.ca">
+                  <button className="min-w-28 flex-1 border-solid border-2 border-black rounded-full px-7 py-1 hover:bg-black hover:text-white">
+                    Github
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
