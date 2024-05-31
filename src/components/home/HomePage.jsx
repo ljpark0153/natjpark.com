@@ -6,9 +6,9 @@ function HomePage() {
       <div id="introductionDiv" className="max-w-5xl mx-auto">
         <div
           id="introductionName"
-          className="text-5xl text-center py-2 font-semibold tracking-wider"
+          className="text-5xl text-start py-2 font-semibold tracking-wider pl-28"
         >
-          Jiho Park
+          Hello!
         </div>
         <div className="flex">
           <img
@@ -17,7 +17,7 @@ function HomePage() {
           ></img>
           <div className="flex flex-col justify-center text-xl gap-5">
             <p className="">
-              Hello! I&apos;m{" "}
+              I&apos;m{" "}
               <span className="font-semibold underline">Jiho Park</span>, a
               graduate from the University of Alberta&apos;s Computing Science
               Program.{" "}
