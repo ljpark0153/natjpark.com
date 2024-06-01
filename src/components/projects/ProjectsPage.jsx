@@ -102,7 +102,7 @@ function ProjectsPage() {
                 className="h-full w-full object-scale-down"
               ></img>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-evenly">
               <p>
                 This is my personal porfolio website using ReactJS and
                 TailwindCSS.
