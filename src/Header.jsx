@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Pdf from "./components/resume/resumeJihoPark.pdf";
 
 function Header() {
   return (
@@ -13,7 +14,11 @@ function Header() {
           <Link className="mr-5" to="/projects">
             Projects
           </Link>
-          <div>Resume</div>
+          <div>
+            <a href={Pdf} target="_blank">
+              Resume
+            </a>
+          </div>
         </div>
       </nav>
     </header>
