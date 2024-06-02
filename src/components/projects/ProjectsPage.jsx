@@ -104,7 +104,7 @@ function ProjectsPage() {
             </div>
             <div className="flex flex-col justify-evenly">
               <p>
-                This is my personal porfolio website using ReactJS and
+                This is my personal porfolio website using Vite + ReactJS and
                 TailwindCSS.
               </p>
               <div className="flex justify-center gap-8 items-end">
