@@ -48,7 +48,7 @@ function ProjectsPage() {
                 Spearmint is a mobile app created using Android Studio. It
                 allows the users to publish their experiments and others can
                 subscribe to the experiment and participate in different
-                experiments. The app uses Java and Firebase for the Backend.
+                experiments. The app uses Java and Firebase for the backend.
               </p>
               <div className="flex justify-center gap-8 items-end">
                 <a href="https://github.com/CMPUT301W21T22/Spearmint">
