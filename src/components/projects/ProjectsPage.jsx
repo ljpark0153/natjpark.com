@@ -74,7 +74,7 @@ function ProjectsPage() {
             <div className="flex flex-col flex-1 justify-between py-10">
               <p>
                 Spritz & Giggles is a puzzle game created with Unity game engine
-                Utulizing C# for the scripts. Worked with the UI side of the
+                utulizing C# for the scripts. Worked with the UI side of the
                 game.
               </p>
               <div className="flex justify-center gap-8 items-end">
