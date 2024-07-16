@@ -11,6 +11,7 @@ function getRandomNumber(max) {
 function HomePage() {
 
   const helloInDifferentLanguage = [
+    "Hello!",
     "Bonjour!",
     "Hallo!",
     "नमस्ते!",
@@ -22,12 +23,13 @@ function HomePage() {
     "你好!",
   ]
 
-  const [randomIndex, setRandomIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let interval = setInterval(() => {
-      setRandomIndex(getRandomNumber(helloInDifferentLanguage.length));
-    }, 2000)
+    let interval = setInterval(
+      () => setIndex((index) => index + 1),
+      2000
+    )
 
     return () => {
       clearInterval(interval)
@@ -41,21 +43,23 @@ function HomePage() {
       case "Bonjour!":
         return "4.8rem"
       case "Hallo!":
-        return "6rem"
+        return "7rem"
       case "नमस्ते!":
-        return "7.5rem"
+        return "7rem"
       case "Ciao!":
         return "7rem"
       case "こんにちは!":
-        return "3.5rem"
+        return "3.2rem"
       case "안녕하세요!":
-        return "3.5rem"
+        return "3.2rem"
       case "Привет!":
         return "5rem"
       case "Hola!":
         return "7rem"
       case "你好!":
         return "7.5rem"
+      case "Hello!":
+        return "6.5rem"
       default:
         return "5rem"
     }
@@ -69,8 +73,8 @@ function HomePage() {
           id="introductionName"
           className="text-5xl text-start py-2 font-semibold tracking-wider"
         >
-          <ReactTextTransition style={{paddingLeft: paddingLeftValue(helloInDifferentLanguage[randomIndex])}}>
-            {helloInDifferentLanguage[randomIndex]}
+          <ReactTextTransition style={{paddingLeft: paddingLeftValue(helloInDifferentLanguage[index % helloInDifferentLanguage.length])}}>
+            {helloInDifferentLanguage[index % helloInDifferentLanguage.length]}
           </ReactTextTransition>
       
           {/* Hello! */}
