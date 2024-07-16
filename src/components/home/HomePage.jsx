@@ -1,14 +1,79 @@
 import profilePicture from "../img/headshot.jpeg";
+import ReactTextTransition, {presets} from "react-text-transition";
+
+import { useState } from "react";
+import { useEffect } from "react";
+
+function getRandomNumber(max) {
+  return Math.floor(Math.random() * max)
+}
 
 function HomePage() {
+
+  const helloInDifferentLanguage = [
+    "Bonjour!",
+    "Hallo!",
+    "नमस्ते!",
+    "Ciao!",
+    "こんにちは!",
+    "안녕하세요!",
+    "Привет!",
+    "Hola!",
+    "你好!",
+  ]
+
+  const [randomIndex, setRandomIndex] = useState(0);
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setRandomIndex(getRandomNumber(helloInDifferentLanguage.length));
+    }, 2000)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+
+
+  const paddingLeftValue = (word) => {
+    
+    switch (word) {
+      case "Bonjour!":
+        return "4.8rem"
+      case "Hallo!":
+        return "6rem"
+      case "नमस्ते!":
+        return "7.5rem"
+      case "Ciao!":
+        return "7rem"
+      case "こんにちは!":
+        return "3.5rem"
+      case "안녕하세요!":
+        return "3.5rem"
+      case "Привет!":
+        return "5rem"
+      case "Hola!":
+        return "7rem"
+      case "你好!":
+        return "7.5rem"
+      default:
+        return "5rem"
+    }
+  }
+
+
   return (
     <div id="homepage" className="flex-grow">
       <div id="introductionDiv" className="max-w-5xl mx-auto">
         <div
           id="introductionName"
-          className="text-5xl text-start py-2 font-semibold tracking-wider pl-28"
+          className="text-5xl text-start py-2 font-semibold tracking-wider"
         >
-          Hello!
+          <ReactTextTransition style={{paddingLeft: paddingLeftValue(helloInDifferentLanguage[randomIndex])}}>
+            {helloInDifferentLanguage[randomIndex]}
+          </ReactTextTransition>
+      
+          {/* Hello! */}
         </div>
         <div className="flex">
           <img
