@@ -1,15 +1,14 @@
 import profilePicture from "../img/headshot.jpeg";
-import ReactTextTransition, {presets} from "react-text-transition";
+import ReactTextTransition, { presets } from "react-text-transition";
 
 import { useState } from "react";
 import { useEffect } from "react";
 
 function getRandomNumber(max) {
-  return Math.floor(Math.random() * max)
+  return Math.floor(Math.random() * max);
 }
 
 function HomePage() {
-
   const helloInDifferentLanguage = [
     "Hello!",
     "Bonjour!",
@@ -21,50 +20,44 @@ function HomePage() {
     "Привет!",
     "Hola!",
     "你好!",
-  ]
+  ];
 
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let interval = setInterval(
-      () => setIndex((index) => index + 1),
-      2000
-    )
+    let interval = setInterval(() => setIndex((index) => index + 1), 2000);
 
     return () => {
-      clearInterval(interval)
-    }
-  }, [])
-
+      clearInterval(interval);
+    };
+  }, []);
 
   const paddingLeftValue = (word) => {
-    
     switch (word) {
       case "Bonjour!":
-        return "4.8rem"
+        return "4.8rem";
       case "Hallo!":
-        return "7rem"
+        return "7rem";
       case "नमस्ते!":
-        return "7rem"
+        return "7rem";
       case "Ciao!":
-        return "7rem"
+        return "7rem";
       case "こんにちは!":
-        return "3.2rem"
+        return "3.2rem";
       case "안녕하세요!":
-        return "3.2rem"
+        return "3.2rem";
       case "Привет!":
-        return "5rem"
+        return "5rem";
       case "Hola!":
-        return "7rem"
+        return "7rem";
       case "你好!":
-        return "7.5rem"
+        return "7.5rem";
       case "Hello!":
-        return "6.5rem"
+        return "6.5rem";
       default:
-        return "5rem"
+        return "5rem";
     }
-  }
-
+  };
 
   return (
     <div id="homepage" className="flex-grow">
@@ -73,10 +66,18 @@ function HomePage() {
           id="introductionName"
           className="text-5xl text-start py-2 font-semibold tracking-wider"
         >
-          <ReactTextTransition style={{paddingLeft: paddingLeftValue(helloInDifferentLanguage[index % helloInDifferentLanguage.length])}}>
+          <ReactTextTransition
+            style={{
+              paddingLeft: paddingLeftValue(
+                helloInDifferentLanguage[
+                  index % helloInDifferentLanguage.length
+                ]
+              ),
+            }}
+          >
             {helloInDifferentLanguage[index % helloInDifferentLanguage.length]}
           </ReactTextTransition>
-      
+
           {/* Hello! */}
         </div>
         <div className="flex">
