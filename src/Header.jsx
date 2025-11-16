@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Pdf from "./components/resume/Current_Resume.pdf";
+import Pdf from "./components/resume/resumeJihoPark.pdf";
 
 function Header() {
   return (
